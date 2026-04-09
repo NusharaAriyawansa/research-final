@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 //     }
 
 
-    //Uncomment this and comment generateVibrationPattern and startVibration functions above for amplitude modulation
+    //Comment this and uncomment generateVibrationPattern and startVibration functions above for amplitude modulation
    public void startVibration(String text) {
        if (vibrator != null) {
            Log.d("VIBRATOR", "Vibrator available");
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
            patternList.add(50L); //50L
            amplitudeList.add(0);
            patternList.add(50L); //50L
-           amplitudeList.add(0);
+           amplitudeList.add(0); //10
        }
 
        // Convert lists to arrays
