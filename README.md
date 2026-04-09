@@ -1,15 +1,30 @@
-## Research Project
+# Research Project - Enhancing Covert Data Exfiltration from Smartphones through mmWave FMCW Radar
 
 This repository contains the source code for both the **sender** and **receiver** setups used in the associated research project.
 
-### Instructions
+## Repository Structure
 
-- **Receiver Setup:**
-  - Please download the dataset file: [An.bin](https://drive.google.com/file/d/1NOGwxa2Ro3wGJ_p8tDYrgCO2fEvZK8Ul/view?usp=sharing)
-  - Place the downloaded `An.bin` file inside the **`Receiver/Data/`** directory before running the receiver code.
+- `Sender/` – Code to encode and transmit data via smartphone vibrations.  
+- `Receiver/` – Code to decode received signals from the radar system.  
+- `Receiver/Data/` – Directory to store the radar dataset file.  
 
-- **Sender Setup:**
-  - Use the sender code on a **mobile device that supports vibration amplitude control** for proper functioning.
+## Getting Started
 
+### Receiver Setup
+
+1. Download the radar dataset file: [z.bin](https://drive.google.com/file/d/1NOGwxa2Ro3wGJ_p8tDYrgCO2fEvZK8Ul/view?usp=sharing)  
+2. Place the downloaded `z.bin` file inside the `Receiver/Data/` directory.  
+3. Run the receiver code to decode the captured signals and evaluate decoding performance.  
+
+### Sender Setup
+
+1. Use a **smartphone that supports vibration amplitude control** (Android devices with API level 26+ recommended).  
+2. Run the sender code to transmit data as vibration sequences according to the PWAM encoding scheme.  
+
+## Notes
+
+- The receiver pipeline uses **cross-correlation-based pulse extraction** with dynamic thresholding for symbol detection.  
+- Evaluation metrics included: Bit Error Rate (BER), data rate, and decoding confidence.  
+- Ensure the `z.bin` dataset is present in the correct directory before running decoding experiments.  
 
 
