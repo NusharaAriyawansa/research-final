@@ -111,10 +111,19 @@ ylim([-0.2 1.2]); % Keep the plot range between 0 and 1
 grid on;
 
 %call on off keying function to decode the data using OOK
-onoffkeying(binarySignal,amplitudeThreshold,100,fileName);
+%onoffkeying(binarySignal,amplitudeThreshold,100,fileName);
 
-%uncomment this to decode amplitude modulation
-% analyzeAmplitudePatternNew(smoothed_amplitude,fileName);
+%old PWAM decoding function
+analyzeAmplitudePatternNew(smoothed_amplitude,fileName);
+
+%optimized PWAM decoding function
+%optimizedPWAMReceiver(smoothed_amplitude,fileName);
+
+%comparison code for cross-correlation
+%XCorr_comparison(smoothed_amplitude,fileName);
+
+%comparison code for dynamic thresholding 
+%DynThr_comparison(smoothed_amplitude,fileName);
 
 
 figure;

@@ -33,7 +33,8 @@ fileCount = length(matDataDir);
 sigFre = [100,300];
 
 % target location
-trueLoc =  0.64;
+% trueLoc =  0.31; // for the .bin file in the drive
+trueLoc =  0.31;
 
 
 for fileId = 1: 1 : fileCount
