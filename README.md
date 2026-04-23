@@ -12,7 +12,7 @@ This repository contains the source code for both the **sender** and **receiver*
 
 ### Receiver Setup
 
-1. Download the radar dataset file: [z.bin](https://drive.google.com/file/d/1ijZ95pm_hpTUGTXcz4DbDQeXSQO7CLpe/view?usp=sharing)  
+1. Download the radar dataset file: [z.bin](https://drive.google.com/drive/folders/1V_j2C6L5xgD976xGR0AHsnu7TCfgDMIb?usp=drive_link)  
 2. Place the downloaded `z.bin` file inside the `Receiver/Data/` directory.  
 3. Run the receiver code to decode the captured signals and evaluate decoding performance.  
 
